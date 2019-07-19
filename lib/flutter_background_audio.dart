@@ -6,20 +6,15 @@ class FlutterBackgroundAudio {
   static const MethodChannel _channel =
       const MethodChannel('flutter_background_audio');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+  static Future<void> play(String url, {bool isLooping=true}) async{
+    await _channel.invokeMethod("play", {"url": url, "isLooping": isLooping});
   }
 
-  static void play(String url, {bool isLooping=true}) async{
-    print(await _channel.invokeMethod("play", {"url": url, "isLooping": isLooping}));
-  }
-
-  static void pause() async{
+  static Future<void> pause() async{
     await _channel.invokeMethod("pause");
   }
 
-  static void stop() async{
+  static Future<void> stop() async{
     await _channel.invokeMethod("stop");
   }
   static Future<bool> get isPlaying async{

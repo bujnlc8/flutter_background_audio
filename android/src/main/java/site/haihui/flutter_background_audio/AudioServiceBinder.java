@@ -104,7 +104,8 @@ public class AudioServiceBinder extends Binder {
     public void stop() {
         if (mediaPlayer != null) {
             mediaPlayer.stop();
-            reset();
+            mediaPlayer.release();
+            mediaPlayer = null;
         }
     }
 
