@@ -4,9 +4,9 @@
 Pod::Spec.new do |s|
   s.name             = 'flutter_background_audio'
   s.version          = '0.0.1'
-  s.summary          = 'A flutter plugin can play audio in background.'
+  s.summary          = 'A flutter plugin that can play audio at background.'
   s.description      = <<-DESC
-A new flutter plugin project.
+A flutter plugin that can play audio at background.
                        DESC
                        s.homepage         = 'https://blog.haihui.site'
   s.license          = { :file => '../LICENSE' }
@@ -15,7 +15,7 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
 end
 
