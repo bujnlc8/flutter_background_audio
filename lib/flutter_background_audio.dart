@@ -11,8 +11,8 @@ class FlutterBackgroundAudio {
     return version;
   }
 
-  static void play(String url) async{
-    await _channel.invokeMethod("play", {"url": url, "isLooping": true});
+  static void play(String url, {bool isLooping=true}) async{
+    print(await _channel.invokeMethod("play", {"url": url, "isLooping": isLooping}));
   }
 
   static void pause() async{

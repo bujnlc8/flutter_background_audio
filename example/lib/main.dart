@@ -30,7 +30,8 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
           FlatButton(
             onPressed: (){
-              FlutterBackgroundAudio.play("https://ccrma.stanford.edu/~jos/mp3/bachfugue.mp3");
+              FlutterBackgroundAudio.play(
+                "https://songci.nos-eastchina1.126.net/audio/1.m4a");
             },
            child: Text("play"),),
               FlatButton(onPressed: (){
@@ -45,7 +46,7 @@ class _MyAppState extends State<MyApp> {
                   _isPlaying = isPlaying;
                 });
               },child: Text("check"),),
-              Text('is playing: $_isPlaying\n'),
+              Text('audio is playing? : $_isPlaying\n'),
           ],
         )),
       ),

@@ -1,8 +1,8 @@
 name: flutter_background_audio
-description: A new flutter plugin project.
+description: a simple flutter plugin that supports play audio at background
 version: 0.0.1
-author:
-homepage:
+author: haihuiling@gmail.com
+homepage: https://blog.haihui.site
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
