@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           FlatButton(
             onPressed: (){
               FlutterBackgroundAudio.play(
-                "https://songci.nos-eastchina1.126.net/audio/1.m4a");
+                "https://songci.nos-eastchina1.126.net/audio/1.m4a", artist: "赵佶", title: "雁山亭");
             },
            child: Text("play"),),
               FlatButton(onPressed: (){
